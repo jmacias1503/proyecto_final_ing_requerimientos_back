@@ -1,0 +1,37 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{\numberline {1}Descripción General del Proyecto}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Resumen}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Alcance y Limitaciones}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Justificación}{4}{section.1.3}%
+\contentsline {chapter}{\numberline {2}Especificación de Requerimientos}{5}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Requerimientos Funcionales}{5}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Requerimientos No Funcionales}{5}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Casos de Uso}{5}{section.2.3}%
+\contentsline {chapter}{\numberline {3}Análisis y Diseño del Sistema}{6}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Diagrama de Arquitectura}{6}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Diagramas UML}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Modelo de Datos}{6}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Especificación de Interfaz}{6}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Planificación y Gestión del Proyecto}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Cronograma}{7}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Recursos y Roles}{7}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Control de Versiones}{7}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Implementación}{8}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Estructura del Código}{8}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Convenciones de Codificación}{8}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Dependencias}{8}{section.5.3}%
+\contentsline {chapter}{\numberline {6}Pruebas y Validación}{9}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Plan de Pruebas}{9}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Casos de Prueba}{9}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Registro de Errores}{9}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Manual de Usuario}{10}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Guía de Uso}{10}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Resolución de Problemas Comunes}{10}{section.7.2}%
+\contentsline {chapter}{\numberline {8}Manual Técnico o de Mantenimiento}{11}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Instrucciones de Mantenimiento}{11}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Recuperación ante Fallos}{11}{section.8.2}%
+\contentsline {chapter}{\numberline {9}Documentación de Despliegue}{12}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Instrucciones de Instalación}{12}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Requisitos de Hardware y Software}{12}{section.9.2}%
+\contentsline {chapter}{\numberline {10}Licencias y Acuerdos}{13}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Registro de Cambios (Changelog)}{14}{chapter.11}%
