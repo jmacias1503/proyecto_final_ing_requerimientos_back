@@ -1,0 +1,60 @@
+\documentclass[a4paper, 12pt]{report}
+\setlength{\headheight}{15.71667pt}
+\addtolength{\topmargin}{-3.71667pt}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{listings}
+\usepackage{geometry}
+
+\geometry{left=2.5cm, right=2.5cm, top=2.5cm, bottom=2.5cm}
+\hypersetup{
+	colorlinks=true,
+	linkcolor=blue,
+	urlcolor=blue,
+}
+
+% Encabezado y pie de página
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Documentación}
+\fancyhead[R]{\leftmark}
+\fancyfoot[C]{\thepage}
+
+% Datos de portada
+\title{Documentación del Proyecto: Herramienta de Tareas}
+\author{David Mata Guerra\\Alejandro Macías Fonseca\\Alexis Emilio Cárdenas Camacho\\Gabriel Juárez Ramírez \\ Universidad Autónoma de Querétaro}
+\date{\today}
+
+\begin{document}
+	
+	\maketitle
+	\tableofcontents
+	\newpage
+	
+	% Capítulo 1 - Descripción General del Proyecto
+	\include{descripcion-general-del-proyecto}
+	% Capítulo 2 - Especificación de Requisitos
+	\include{especificacion-de-requerimientos}
+	% Capítulo 3 - Análisis y Diseño del Sistema
+	\include{analisis-y-diseno-del-sistema}
+	% Capítulo 4 - Planificación y Gestión del Proyecto
+	\include{planificacion-y-gestion-del-proyecto}
+	% Capítulo 5 - Implementación
+	\include{implementacion}
+	% Capítulo 6 - Pruebas y Validación
+	\include{pruebas-y-validacion}
+	% Capítulo 7 - Manual de Usuario
+	\include{manual-de-usuario}
+	% Capítulo 8 - Manual Técnico o de Mantenimiento
+	\include{manual-tecnico-o-de-mantenimiento}
+	% Capítulo 9 - Documentación de Despliegue
+	\include{documentacion-de-despliegue}
+	% Capítulo 10 - Licencias y Acuerdos
+	\include{licencias-y-acuerdos}
+	% Capítulo 11 - Registro de Cambios
+	\include{registro-de-cambios}
+\end{document}
