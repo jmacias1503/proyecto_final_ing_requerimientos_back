@@ -21,7 +21,12 @@
 		& El usuario final pide al sistema crear una nueva tarea mediante la aplicaci\'on\\
 		& La aplicaci\'on despliega los campos a llenar para la tarea\\
 		& Una vez llenados los campos, el usuario interact\'ua con la aplicaci\'on para guardar la tarea\\
-		& La tarea es enviada a la base de datos del sistema\\
+		& La tarea es enviada a la base de datos del sistema y la valida\\
+  \hline
+  Excepciones: & \textbf{1.0.E1. La tarea ya ha sido creada}\\
+	       & Si la validaci\'on de la base de datos encuentra que la tarea ya ha sido creada, arroja un error \\
+	       & La aplicaci\'on escucha si la base de datos arroj\'o el error, y muestra al usuario que la tarea ya ha sido creada\\
+	       & El usuario no podr\'a guardar la tarea hasta que el campo del t\'itulo sea cambiado
   \hline
 \end{tabular}
 \end{center}
