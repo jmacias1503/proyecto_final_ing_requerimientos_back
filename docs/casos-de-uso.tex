@@ -11,23 +11,77 @@
   \hline
   Trigger: & \multicolumn{3}{p{11cm}}{El usuario final indica que quiere crear una tarea con el bot\'on especificado}\\
   \hline
-  Precondiciones: & \multicolumn{3}{p{11cm}}{PRE-1. El usuario est\'a registrado en la base de datos}\\
-		  & \multicolumn{3}{p{11cm}}{PRE-2. El usuario cuenta con conexi\'on a internet para acceder al sistema}\\
+  Precondiciones: & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-1. El usuario est\'a registrado en la base de datos}\\
+		  & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-2. El usuario cuenta con conexi\'on a internet para acceder al sistema}\\
   \hline
-  Postcondiciones: & \multicolumn{3}{p{11cm}}{POST-1. La tarea ser\'a guardada en la base de datos}\\
-		   & \multicolumn{3}{p{11cm}}{POST-2. La tarea ser\'a mostrada en la p\'agina principal del usuario}\\
+  Postcondiciones: & \multicolumn{3}{p{11cm}}{$\bullet$ POST-1. La tarea ser\'a guardada en la base de datos}\\
+		   & \multicolumn{3}{p{11cm}}{$\bullet$ POST-2. La tarea ser\'a mostrada en la p\'agina principal del usuario}\\
   \hline
-  Flujo normal: & \textbf{1.0. Crear una tarea}\\
-		& El usuario final pide al sistema crear una nueva tarea mediante la aplicaci\'on\\
-		& La aplicaci\'on despliega los campos a llenar para la tarea\\
-		& Una vez llenados los campos, el usuario interact\'ua con la aplicaci\'on para guardar la tarea\\
-		& La tarea es enviada a la base de datos del sistema y la valida\\
+  Flujo normal: & \multicolumn{3}{p{11cm}}{\textbf{1.0. Crear una tarea}}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El usuario final pide al sistema crear una nueva tarea mediante la aplicaci\'on}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on despliega los campos a llenar para la tarea}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez llenados los campos, el usuario interact\'ua con la aplicaci\'on para guardar la tarea}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La tarea es enviada a la base de datos del sistema y la valida}\\
   \hline
-  Excepciones: & \textbf{1.0.E1. La tarea ya ha sido creada}\\
-	       & Si la validaci\'on de la base de datos encuentra que la tarea ya ha sido creada, arroja un error \\
-	       & La aplicaci\'on escucha si la base de datos arroj\'o el error, y muestra al usuario que la tarea ya ha sido creada\\
-	       & El usuario no podr\'a guardar la tarea hasta que el campo del t\'itulo sea cambiado
+  Excepciones: & \multicolumn{3}{p{11cm}}{\textbf{1.0.E1. La tarea ya ha sido creada}}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ Si la validaci\'on de la base de datos encuentra que la tarea ya ha sido creada, arroja un error}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on escucha si la base de datos arroj\'o el error, y muestra al usuario que la tarea ya ha sido creada}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario no podr\'a guardar la tarea hasta que el campo del t\'itulo sea cambiado}\\
+  \hline
+  Prioridad: & \multicolumn{3}{p{11cm}}{Alta}\\
+  \hline
+  Frecuencia de uso: & \multicolumn{3}{p{11cm}}{Aproximadamente de 1 a 5 veces por d\'ia por usuario}\\
+  \hline
+  Reglas de negocio: & \multicolumn{3}{p{11cm}}{Por definir}\\
+  \hline
+  Informaci\'on adicional: & \multicolumn{3}{p{11cm}}{La aplicaci\'on deber\'a de mostrar en una ventana emergente los campos a llenar}\\
+  \hline
+  Asumciones: & \multicolumn{3}{p{11cm}}{Las tareas subidas no se tomar\'an como completadas}\\
   \hline
 \end{tabular}
 \end{center}
-
+\begin{center}
+\begin{tabular}{p{3cm}p{5cm}p{4cm}p{2cm}}
+  \hline
+  ID y nombre & \multicolumn{3}{p{11cm}}{CU-2. Eliminar una tarea}\\
+  \hline
+  Creado por: & Alejandro & Fecha de creaci\'on & 24-11-05\\
+  \hline
+  Actor principal: & Usuario final & Actores secundarios: & Base de datos, aplicaci\'on principal\\
+  \hline
+  Descripci\'on & \multicolumn{3}{p{11cm}}{El usuario eliminar\'a de sus tareas una tarea especificada por este por medio de la aplicaci\'on.}\\
+  \hline
+  Trigger: & \multicolumn{3}{p{11cm}}{El usuario final indica que quiere eliminar una tarea con el bot\'on especificado}\\
+  \hline
+  Precondiciones: & \multicolumn{3}{p{11cm}}{PRE-1. El usuario est\'a registrado en la base de datos}\\
+		  & \multicolumn{3}{p{11cm}}{PRE-2. El usuario cuenta con conexi\'on a internet para acceder al sistema}\\
+		  & \multicolumn{3}{p{11cm}}{PRE-3. El usuario cuenta con al menos una tarea registrada en la base de datos}\\
+  \hline
+  Postcondiciones: & \multicolumn{3}{p{11cm}}{POST-1. La tarea ser\'a eliminada permanentemente en la base de datos}\\
+		   & \multicolumn{3}{p{11cm}}{POST-2. La tarea dejar\'a de ser mostrada mostrada en la p\'agina principal del usuario}\\
+  \hline
+  Flujo normal: & \multicolumn{3}{p{11cm}}{\textbf{2.0. Eliminar una tarea}}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El usuario final pide al sistema eliminar una tarea seleccionada mediante la aplicaci\'on}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on despliega una ventana emergente con un mensaje de que quiere corroborar eliminar la tarea, junto con dos opciones, las cuales son ``Cancelar'' y ``Confirmar''. En caso de seleccionar ``Cancelar'', el sistema no borra la tarea y la ventana emergente desaparece}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez confirmada la elecci\'on, la aplicaci\'on env\'ia la petici\'on a la base de datos de eliminar la tarea seleccionada}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La tarea es eliminada de la base del datos del sistema}\\
+  \hline
+  Flujo alternativo: & \multicolumn{3}{p{11cm}}{\textbf{2.1. Eliminar m\'ultiples tareas}}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario mediante la opci\'on de seleccionar m\'ultiples tareas que provee la aplicaci\'on, escoge distintas tareas destinadas a eliminar}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario utiliza la implementaci\'on de eliminar tarea que provee la aplicaci\'on para eliminar las tareas seleccionadas previamente}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on env\'ia al sistema los identificadores de las tareas a eliminar}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El sistema hace la petici\'on a la base de datos para eliminar los registros de las tareas especificadas}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ Las tareas son eliminadas de la base de datos}\\
+  \hline
+  Prioridad: & \multicolumn{3}{p{11cm}}{Alta}\\
+  \hline
+  Frecuencia de uso: & \multicolumn{3}{p{11cm}}{Aproximadamente de 1 a 5 veces por d\'ia por usuario}\\
+  \hline
+  Reglas de negocio: & \multicolumn{3}{p{11cm}}{Por definir}\\
+  \hline
+  Informaci\'on adicional: & \multicolumn{3}{p{11cm}}{La aplicaci\'on deber\'a de mostrar en una ventana emergente los campos a llenar}\\
+  \hline
+  Asumciones: & \multicolumn{3}{p{11cm}}{La aplicaci\'on muestra un panel para borrar la tarea}\\
+  \hline
+\end{tabular}
+\end{center}
