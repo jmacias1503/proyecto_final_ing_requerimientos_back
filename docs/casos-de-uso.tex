@@ -122,14 +122,12 @@
 		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on despliega una ventana con los datos de la tarea, dej\'andolos abiertos para editarlos}\\
 		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez el usuario haya editado la tarea a voluntad, el usuario interact\'ua con la aplicaci\'on en un bot\'on dedicado para guardar la tarea}\\
 		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on env\'ia al sistema que se quieren actualizar los datos de la tarea especificada}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El sistema valida la actualizaci\'on}\\
 		& \multicolumn{3}{p{11cm}}{$\bullet$ El sistema actualiza la informaci\'on de la tarea especificada en la base de datos}\\
   \hline
-  Flujo alternativo: & \multicolumn{3}{p{11cm}}{\textbf{2.1. Eliminar m\'ultiples tareas}}\\
-	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario mediante la opci\'on de seleccionar m\'ultiples tareas que provee la aplicaci\'on, escoge distintas tareas destinadas a eliminar}\\
-	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario utiliza la implementaci\'on de eliminar tarea que provee la aplicaci\'on para eliminar las tareas seleccionadas previamente}\\
-	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on env\'ia al sistema los identificadores de las tareas a eliminar}\\
-	       & \multicolumn{3}{p{11cm}}{$\bullet$ El sistema hace la petici\'on a la base de datos para eliminar los registros de las tareas especificadas}\\
-	       & \multicolumn{3}{p{11cm}}{$\bullet$ Las tareas son eliminadas de la base de datos}\\
+  Excepciones & \multicolumn{3}{p{11cm}}{\textbf{3.0.E1. Renombrar como una tarea ya creada}}\\
+	      & \multicolumn{3}{p{11cm}}{$\bullet$ En caso de que el nombre de la tarea ya exista, el sistema arroja un error de que la tarea ya existe.}\\
+	      & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on atrapa el error, y despliega en una ventana emergente el error.}\\
   \hline
   Prioridad: & \multicolumn{3}{p{11cm}}{Alta}\\
   \hline
