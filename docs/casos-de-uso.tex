@@ -23,6 +23,12 @@
 		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez llenados los campos, el usuario interact\'ua con la aplicaci\'on para guardar la tarea}\\
 		& \multicolumn{3}{p{11cm}}{$\bullet$ La tarea es enviada a la base de datos del sistema y la valida}\\
   \hline
+  Flujo alternativo: & \multicolumn{3}{p{11cm}}{\textbf{1.1. Crear una tarea anidada}}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ Al seleccionar una tarea, la aplicaci\'on le mostrar\'a al usuario distintos campos para editar, en uno de ellos, el agregar tareas anidadas}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ Al seleccionar el campo, se desplegar\'a un campo donde el usuario dar\'a el nombre de la tarea, junto con una opci\'on para guardar la tarea}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ Al indicarle el usuario a la aplicaci\'on que quiere guardar la tarea anidada, esta enviar\'a al sistema que se quiere crear una tarea anidada, pas\'andole el identificador de la tarea anidada, junto con el identificador de la tarea padre como campo}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ El sistema guarda la tarea anidada en la base de datos}\\
+  \hline
   Excepciones: & \multicolumn{3}{p{11cm}}{\textbf{1.0.E1. La tarea ya ha sido creada}}\\
 	       & \multicolumn{3}{p{11cm}}{$\bullet$ Si la validaci\'on de la base de datos encuentra que la tarea ya ha sido creada, arroja un error}\\
 	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on escucha si la base de datos arroj\'o el error, y muestra al usuario que la tarea ya ha sido creada}\\
