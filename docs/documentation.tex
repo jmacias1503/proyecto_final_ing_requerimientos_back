@@ -25,13 +25,47 @@
 \fancyfoot[C]{\thepage}
 
 % Datos de portada
-\title{Documentación del Proyecto: Herramienta de Tareas}
-\author{David Mata Guerra\\Alejandro Macías Fonseca\\Alexis Emilio Cárdenas Camacho\\Gabriel Juárez Ramírez \\ Universidad Autónoma de Querétaro}
-\date{\today}
+\newcommand{\portada}{
+    \begin{titlepage}
+        \centering
+        \vspace*{1cm}
+        
+        \includegraphics[width=0.2\textwidth]{./images/escudo_principal.png} \hfill
+        \includegraphics[width=0.2\textwidth]{./images/escudo_secundario.png}
+        
+        \vspace{2cm}
+        
+        {\Huge \textbf{Proyecto Final\\Ingeniería de Requerimientos}}
+        
+        \vspace{1.5cm}
+        
+        {\Large Documentación del Proyecto}
+        
+        \vspace{2cm}
+        
+        \textbf{Participantes:}
+        
+        \vspace{0.5cm}
+        \begin{center}
+				David Mata Guerra\\
+				Alejandro Macías Fonseca\\
+				Alexis Emilio Cárdenas Camacho \\
+				Gabriel Juárez Ramírez \\
+		\end{center}
+        
+        \vfill
+        
+        {\Large Universidad Autónoma de Querétaro}
+        
+        \vspace{0.5cm}
+        
+        {\Large \today}
+        
+    \end{titlepage}
+}
 
 \begin{document}
-	
-	\maketitle
+	\portada
 	\tableofcontents
 	\newpage
 	
