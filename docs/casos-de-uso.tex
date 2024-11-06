@@ -3,7 +3,46 @@
   \endhead
   \endfoot
   \hline
-  ID y nombre & CU-1. Crear una tarea & & \\
+  Id y nombre: & \multicolumn{3}{p{11cm}}{CU-\thetable. Entrar a la plataforma}\\
+  \hline
+  Creado por: & \multicolumn{3}{p{11cm}}{Alejandro}\\
+  \hline
+  Actor principal: & Usuario final & Actores secundarios: & Base de datos, aplicaci\'on principal\\
+  \hline
+  Descripci\'on & \multicolumn{3}{p{11cm}}{El usuario final entrar\'a a la plataforma dando un correo electr\'onico y una contrase\~na}\\
+  \hline
+  Trigger: & \multicolumn{3}{p{11cm}}{El usuario final al entrar a la \textit{landing page}, tendr\'a la opci\'on de entrar a la plataforma y utilizarla}\\
+  \hline
+  Precondiciones: & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-1. El usuario final cuenta con conexi\'on a internet}\\
+		  & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-2. El usuario final cuenta con un correo electr\'onico}\\
+  \hline
+  Postcondiciones: & \multicolumn{3}{p{11cm}}{$\bullet$ POST-1. El usuario tendr\'a acceso a sus tareas}\\
+  \hline
+  Flujo normal: & \multicolumn{3}{p{11cm}}{\textbf{\thetable.0. Entrar a la plataforma}}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El usuario desde la \textit{landing page} interact\'ua con el bot\'on ``Entrar''}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on redigire al usuario final a una pantalla con el respectivo inicio de sesi\'on}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El usuario ingresa su correo y contrase\~na en los apartados}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez ingresados los dos campos, el usuario interact\'ua con el bot\'on ``Ingresar'', y estos datos son enviados}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El sistema valida en la base de datos que el usuario est\'e registrado}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez confirmados los datos, el usuario ser\'a redirigido a la pantalla principal donde ver\'a sus tareas}\\
+  \hline
+  Flujo alternativo: & \multicolumn{3}{p{11cm}}{\textbf{\thetable.1. Registro de usuario nuevo}}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ En caso de que el usuario no est\'e registrado, tendr\'a la opcion de registrarse mediante un bot\'on con el que interactuar\'a}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on redirigir\'a al usuario a una pantalla donde ingresar\'a su nombre, correo electr\'onico y contrase\~na}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ El sistema validar\'a la petici\'on}\\
+		     & \multicolumn{3}{p{11cm}}{$\bullet$ Una vez validada la petici\'on, el usuario tendr\'a acceso a la plataforma}\\
+  \hline
+  Excepciones: & \multicolumn{3}{p{11cm}}{\textbf{\thetable.0.E1. Correo o contrase\~na incorrectos}}\\
+	       & \multicolumn{3}{p{11cm}}{\textbf{\thetable.1.E2. Usuario ya registrado}}\\
+  \hline
+\end{longtable}
+\vspace{1em}
+\begin{longtable}[c]{p{3cm}p{5cm}p{4cm}p{2cm}}
+  \endfirsthead
+  \endhead
+  \endfoot
+  \hline
+  ID y nombre & \multicolumn{3}{p{11cm}}{CU-\thetable. Crear una tarea}\\
   \hline
   Creado por: & Alejandro & Fecha de creaci\'on & 24-11-05\\
   \hline
