@@ -1,44 +1,37 @@
-	\chapter{Especificación de Requerimientos}
-	\section{Requerimientos Funcionales}
+\chapter{Especificación de Requerimientos}
+\section{Requerimientos Funcionales}
+\begin{itemize}
+  \item Gestión de tareas:
     \begin{itemize}
-        \item Gestión de tareas:
-        \begin{itemize}
-            \item Crear tareas.
-            \item Editar tareas.
-            \item Eliminar tareas.
-            \item Marcar tareas como completadas.
-        \end{itemize}
-        \item Visualización de tareas:
-        \begin{itemize}
-            \item Interfaz intuitiva y práctica de utilizar.
-            \item El usuario pueda reconocer todos los cambios realizados de manera visual.
-        \end{itemize}
+      \item Crear tareas.
+      \item Editar tareas.
+      \item Eliminar tareas.
+      \item Marcar tareas como completadas.
     \end{itemize}
-	
-	\section{Requerimientos No Funcionales}
-	\begin{itemize}
-        \item Rendimiento:
-        \begin{itemize}
-            \item No debe de haber errores en la logica de programacion.
-            \item La aplicación debe de ser rápida y eficiente.
-        \end{itemize}
-    \end{itemize}
-
-    \section{Reglas de Negocio}
+  \item Visualización de tareas:
     \begin{itemize}
-        \item Las tareas deben de tener un nombre.
-        \item Las tareas deben de tener una descripción.
-        \item Las tareas deben de tener una fecha de vencimiento.
-        \item Las tareas deben de tener un estado.
+      \item Interfaz intuitiva y práctica de utilizar.
+      \item El usuario pueda reconocer todos los cambios realizados de manera visual.
     \end{itemize}
-
     \section{Stakeholders}
     \begin{itemize}
         \item Desarrolladores.
         \item Usuarios.
         \item Profesor.
     \end{itemize}
-
+\end{itemize}
+\section{Reglas de Negocio}
+\begin{enumerate}[start=1, label={RN\arabic*.}]
+  \item Las tareas deben de tener un nombre
+  \item Las tareas hija no deben de pertenecer a m\'ultiples tareas padre
+  \item Las tareas pueden tener una descripci\'on
+  \item Las tareas pueden tener una fecha
+  \item Las tareas tienen dos estados
+  \begin{itemize}
+  \item Sin completar
+    \item Completado
+  \end{itemize}
+\end{enumerate}
 	\section{Casos de Uso}
 	\input{casos-de-uso.tex} 
     
@@ -59,8 +52,11 @@
         \item Historia de Usuario 5
         Como usuario, quiero poder editar mis tareas para poder hacer cambios en ellas si es necesario.
     \end{itemize}
-
-
-    
-    
-    
+\section{Requerimientos No Funcionales}
+\begin{itemize}
+  \item Rendimiento:
+    \begin{itemize}
+      \item No debe de haber errores en la logica de programacion.
+      \item La aplicación debe de ser rápida y eficiente.
+    \end{itemize}
+\end{itemize}
