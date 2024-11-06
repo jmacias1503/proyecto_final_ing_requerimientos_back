@@ -93,5 +93,52 @@
   \hline
   Asumciones: & \multicolumn{3}{p{11cm}}{El usuario tiene al menos una tarea registrada}\\
   \hline
-\end{tabular}
-\end{center}
+\end{longtable}
+
+\begin{longtable}[c]{p{3cm}p{5cm}p{4cm}p{2cm}}
+  \endfirsthead
+  \endhead
+  \endfoot
+  \hline
+  ID y nombre & \multicolumn{3}{p{11cm}}{CU-3. Editar una tarea}\\
+  \hline
+  Creado por: & Alejandro & Fecha de creaci\'on & 24-11-06\\
+  \hline
+  Actor principal: & Usuario final & Actores secundarios: & Base de datos, aplicaci\'on principal\\
+  \hline
+  Descripci\'on & \multicolumn{3}{p{11cm}}{El usuario podr\'a editar una tarea por medio de la aplicaci\'on.}\\
+  \hline
+  Trigger: & \multicolumn{3}{p{11cm}}{El usuario final indica que quiere editar una tarea al entrar en una tarea}\\
+  \hline
+  Precondiciones: & \multicolumn{3}{p{11cm}}{PRE-1. El usuario est\'a registrado en la base de datos}\\
+		  & \multicolumn{3}{p{11cm}}{PRE-2. El usuario cuenta con conexi\'on a internet para acceder al sistema}\\
+		  & \multicolumn{3}{p{11cm}}{PRE-3. El usuario cuenta con al menos una tarea registrada en la base de datos}\\
+  \hline
+  Postcondiciones: & \multicolumn{3}{p{11cm}}{POST-1. La tarea ser\'a editada en la base de datos}\\
+		   & \multicolumn{3}{p{11cm}}{POST-2. La tarea ser\'a mostrada con su nueva informaci\'on en la p\'agina principal del usuario}\\
+  \hline
+  Flujo normal: & \multicolumn{3}{p{11cm}}{\textbf{3.0. Editar una tarea}}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El usuario final selecciona una tarea}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on despliega una ventana con los datos de la tarea, dej\'andolos abiertos para editarlos}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez el usuario haya editado la tarea a voluntad, el usuario interact\'ua con la aplicaci\'on en un bot\'on dedicado para guardar la tarea}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on env\'ia al sistema que se quieren actualizar los datos de la tarea especificada}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El sistema actualiza la informaci\'on de la tarea especificada en la base de datos}\\
+  \hline
+  Flujo alternativo: & \multicolumn{3}{p{11cm}}{\textbf{2.1. Eliminar m\'ultiples tareas}}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario mediante la opci\'on de seleccionar m\'ultiples tareas que provee la aplicaci\'on, escoge distintas tareas destinadas a eliminar}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El usuario utiliza la implementaci\'on de eliminar tarea que provee la aplicaci\'on para eliminar las tareas seleccionadas previamente}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on env\'ia al sistema los identificadores de las tareas a eliminar}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ El sistema hace la petici\'on a la base de datos para eliminar los registros de las tareas especificadas}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ Las tareas son eliminadas de la base de datos}\\
+  \hline
+  Prioridad: & \multicolumn{3}{p{11cm}}{Alta}\\
+  \hline
+  Frecuencia de uso: & \multicolumn{3}{p{11cm}}{Aproximadamente de 1 a 2 veces por d\'ia por usuario}\\
+  \hline
+  Reglas de negocio: & \multicolumn{3}{p{11cm}}{Por definir}\\
+  \hline
+  Informaci\'on adicional: & \multicolumn{3}{p{11cm}}{La aplicaci\'on deber\'a de mostrar en una ventana emergente el mensaje de confirmaci\'on}\\
+  \hline
+  Asumciones: & \multicolumn{3}{p{11cm}}{El usuario tiene al menos una tarea registrada}\\
+  \hline
+\end{longtable}
