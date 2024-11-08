@@ -177,3 +177,35 @@
   Asumciones: & \multicolumn{3}{p{11cm}}{El usuario tiene al menos una tarea registrada}\\
   \hline
 \end{longtable}
+\pagebreak
+\begin{longtable}[c]{p{3cm}p{5cm}p{4cm}p{2cm}}
+  \endfirsthead
+  \endhead
+  \endfoot
+  \hline
+  ID y nombre: & \multicolumn{3}{p{11cm}}{CU-\thetable. Visualizar en orden espec\'ifico las tareas}\\
+  \hline
+  Creado por: & \multicolumn{3}{p{11cm}}{Alejandro}\\
+  \hline
+  Actor principal: & Usuario final & Actores secundarios & Base de datos, aplicaci\'on principal\\
+  \hline
+  Descripci\'on: & \multicolumn{3}{p{11cm}}{El usuario podr\'a visualizar en \'ordenes predefinidos sus tareas, complementando la visualizaci\'on predeterminada de estas}\\
+  \hline
+  Trigger: & \multicolumn{3}{p{11cm}}{El usuario final interact\'ua con la aplicaci\'on para agregar una jerarqu\'ia de visualizaci\'on a la existente por prioridades}\\
+  \hline
+  \multirow{3}{3cm}{Precondiciones:} & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-1. El usuario cuenta con conexi\'on a internet}\\
+                  & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-2. El usuario est\'a registrado en la base de datos}\\
+                  & \multicolumn{3}{p{11cm}}{$\bullet$ PRE-3. El usuario tiene al menos una tarea creada}\\
+  \hline
+  \multirow{2}{3cm}{Postcondiciones:} & \multicolumn{3}{p{11cm}}{$\bullet$ POST-1. El estado de ordenamiento ser\'a guardado si se vuelve a visitar el sitio}\\
+                   & \multicolumn{3}{p{11cm}}{$\bullet$ POST-2. La visualizaci\'on no afectar\'a al contenido de las tareas}\\
+  \hline
+  \multirow{3}{3cm}{Flujo normal:} & \multicolumn{3}{p{11cm}}{\textbf{\thetable.0. Visualizar en orden espec\'ifico las tareas}}\\
+		& \multicolumn{3}{p{11cm}}{$\bullet$ El usuario indica desde el apartado el nuevo orden de visualizaci\'on}\\
+                   & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on recibe la petici\'on, y esta reordena los elementos, sin dejar de respetar los apartados de prioridad}\\
+  \hline
+  Prioridad: & \multicolumn{3}{p{11cm}}{Media}\\
+  \hline
+  Frecuencia de uso: & \multicolumn{3}{p{11cm}}{Aproximadamente una vez por sesi\'on por usuario}\\
+  \hline
+\end{longtable}
