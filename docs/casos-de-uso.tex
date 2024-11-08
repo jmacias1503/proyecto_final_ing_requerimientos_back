@@ -26,17 +26,27 @@
 		& \multicolumn{3}{p{11cm}}{$\bullet$ El sistema valida en la base de datos que el usuario est\'e registrado}\\
 		& \multicolumn{3}{p{11cm}}{$\bullet$ Una vez confirmados los datos, el usuario ser\'a redirigido a la pantalla principal donde ver\'a sus tareas}\\
   \hline
-  Flujo alternativo: & \multicolumn{3}{p{11cm}}{\textbf{\thetable.1. Registro de usuario nuevo}}\\
+  \multirow{5}{3cm}{Flujo alternativo:} & \multicolumn{3}{p{11cm}}{\textbf{\thetable.1. Registro de usuario nuevo \hfill}}\\
 		     & \multicolumn{3}{p{11cm}}{$\bullet$ En caso de que el usuario no est\'e registrado, tendr\'a la opcion de registrarse mediante un bot\'on con el que interactuar\'a}\\
 		     & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on redirigir\'a al usuario a una pantalla donde ingresar\'a su nombre, correo electr\'onico y contrase\~na}\\
 		     & \multicolumn{3}{p{11cm}}{$\bullet$ El sistema validar\'a la petici\'on}\\
 		     & \multicolumn{3}{p{11cm}}{$\bullet$ Una vez validada la petici\'on, el usuario tendr\'a acceso a la plataforma}\\
   \hline
-  Excepciones: & \multicolumn{3}{p{11cm}}{\textbf{\thetable.0.E1. Correo o contrase\~na incorrectos}}\\
+  \multirow{6}{3cm}{Excepciones:} & \multicolumn{3}{p{11cm}}{\textbf{\thetable.0.E1. Correo o contrase\~na incorrectos}}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ Si la validaci\'on no encuentra al usuario con el correo o contrase\~na especificados, el sistema devuelve un error}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on atrapa el error, y muestra al usuario que el usuario o contrase\~na son incorrectos}\\
 	       & \multicolumn{3}{p{11cm}}{\textbf{\thetable.1.E2. Usuario ya registrado}}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ Si el sistema al validar el registro del nuevo usuario, encuentra a uno con ese correo electr\'onico ya registrado, arroja un error}\\
+	       & \multicolumn{3}{p{11cm}}{$\bullet$ La aplicaci\'on atrapa este error y muestra que el usuario ya ha sido registrado}\\
+  \hline
+  Prioridad & \multicolumn{3}{p{11cm}}{Alta}\\
+  \hline
+  Frecuencia de uso & \multicolumn{3}{p{11cm}}{Al menos una vez por semana}\\
+  \hline
+  Reglas de negocio & \multicolumn{3}{p{11cm}}{\ref{rn:user}}\\
   \hline
 \end{longtable}
-\vspace{1em}
+\pagebreak
 \begin{longtable}[c]{p{3cm}p{5cm}p{4cm}p{2cm}}
   \endfirsthead
   \endhead
