@@ -22,6 +22,7 @@
 \end{itemize}
 \section{Reglas de Negocio}
 \begin{enumerate}[start=1, label={RN\arabic*.}]
+  \item Las tareas deben de pertenecer a una persona \label{rn:user}
   \item Las tareas deben de tener un nombre \label{rn:nombre}
   \item Las tareas hija no deben de pertenecer a m\'ultiples tareas padre \label{rn:thija}
   \item Las tareas pueden tener una descripci\'on \label{rn:desc}
@@ -39,6 +40,7 @@
       \item Alta
     \end{itemize}
     El valor predeterminado es ``Ninguno''
+  \item Las tareas pueden ser recurrentes
 \end{enumerate}
 	\section{Casos de Uso}
 	\input{casos-de-uso.tex} 
